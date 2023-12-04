@@ -1,9 +1,9 @@
 package ie.atu;
 
 public class Person {
- String name;
- String address;
- String telephone;
+private String name;
+ private String address;
+private  String telephone;
 
     public Person() {
     this.address= " ";
@@ -39,5 +39,13 @@ public class Person {
 
     public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", telephone='" + telephone + '\'' ;
     }
 }
